@@ -20,6 +20,7 @@ Route::get('/', function () {
 */
 Route::group(['prefix' => 'user', 'middleware' => ['web']], function() {
   Route::get('/login', 'LoginController@form');
+  Route::get('/register', 'RegisterController@form');
 } );
 
 
