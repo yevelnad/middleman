@@ -10,10 +10,18 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
 Route::get('/', function () {
-    return view('welcome');
+  return view('page.home');
 });
+/*
+/--------------------------------------------------------------------------
+/ url = /user; /user/login
+/--------------------------------------------------------------------------
+*/
+Route::group(['prefix' => 'user', 'middleware' => ['web']], function() {
+  Route::get('/login', 'LoginController@form');
+} );
+
 
 /*
 |--------------------------------------------------------------------------

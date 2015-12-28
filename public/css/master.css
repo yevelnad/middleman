@@ -1,0 +1,43 @@
+nav {
+  padding: 10px;
+  background: rgb(25, 194, 32);
+  color: white;
+}
+nav ul li{
+  display: inline-table;
+  color: white;
+  padding: 5px;
+}
+nav ul li:hover{
+  background: white;
+}
+nav ul li.register{
+  background: linear-gradient(rgb(51, 150, 193),rgb(51, 150, 209));
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+nav ul li.register a{
+  color: white;
+}
+nav ul li.register a:hover{
+  color: rgb(25, 194, 32);
+  background: white;
+}
+nav ul li.register a:hover{
+  color: rgb(25, 194, 32);
+}
+nav ul li a{
+  color: white;
+  font-weight: bolder;
+}
+div.search form{
+  background: white;
+}
+div.search form input{
+  border: none;
+  padding: 5px;
+}
