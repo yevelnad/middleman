@@ -1,13 +1,12 @@
 div.register{
   background-image:linear-gradient(rgb(25, 194, 32),rgb(35, 224, 25));
-  margin-top: 0px;
 }
 div.register-form{
-  margin-top: 0px;
 }
 div.register-form form{
   margin-top: 30px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: block;
 }
 div.register-form form input{
@@ -39,6 +38,7 @@ div.register-form form input.button:hover{
 }
 div.register-text{
   padding-top: 40px;
+  text-align: center;
 }
 p{
   display: inline-table;
@@ -59,4 +59,18 @@ p.white{
   font-size: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  text-align: center;
+}
+div.justify{
+  text-align: justify;
+  background: white;
+  padding: 5px;
+  margin-top: 10px;
+}
+div.warning{
+  background: rgb(246, 15, 15);
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  color: white;
 }

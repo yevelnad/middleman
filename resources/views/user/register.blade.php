@@ -14,8 +14,10 @@ Regiter here!
         <div class="col-sm-1"></div>
         <div class="col-sm-5"><p class="register-content"><span class="glyphicon glyphicon-ok"> </span> Trust </p></div>
         <div class="col-sm-12">
-          <p class="register-content"><span class="glyphicon glyphicon-thumbs-up"> </span> Earn </p><p class="white"> by becoming a middleman.</p>
-          <p class="register-content"><span class="glyphicon glyphicon-hand-right"> </span>
+          <p class="register-content"><span class="glyphicon glyphicon-thumbs-up"> </span> Earn </p>
+        </div>
+        <div class="col-sm-12">
+          <p class="white"> by becoming a middleman</p>
         </div>
       </div>
 
@@ -29,4 +31,12 @@ Regiter here!
       </form>
     </div>
   </div>
+<div class="col-sm-12">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6 warning">
+    Warning: This is not recommended for transactions above 1000.00 pesos. Feel free to do so if 1000.00 pesos is just a small amount for you.
+  </div>
+  <div class="col-sm-1"></div>
+
+</div>
 @endsection

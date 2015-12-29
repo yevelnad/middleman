@@ -2,82 +2,48 @@ html{
   background-image: linear-gradient(rgba(145, 232, 180, 0.57),rgba(145, 232, 180, 0.07));
   height: 100%;
 }
-div.top{
-  background: rgb(25, 194, 32);
-  height: 90px;
+img.logo{
+  height: 20px;
 }
-nav {
+nav.navbar {
   padding: 10px;
   background: rgb(25, 194, 32);
   color: white;
-
 }
-img.middleman{
-  height: 20px;
-}
-nav ul li.middleman{
-  box-shadow: inset 0px 0px 5px 0px gray;
-  background: rgb(25, 180, 32);
-}
-nav ul li{
-  display: inline-table;
-  color: white;
-  padding: 5px;
-}
-nav ul li:hover{
-  background: rgba(15, 17, 16, 0.36);
-}
-nav ul li a:hover{
-  text-decoration: none;
-  color: white;
-}
-nav ul li.register{
-  background: white;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-}
-nav ul li.register:hover{
-  background: rgb(242, 245, 242);
-  padding:5px;
-}
-nav ul li.register a{
-  color: rgb(25, 194, 32);
-  text-decoration: none;
-}
-nav ul li.login{
-  background: rgba(16, 16, 17, 0.07);
-}
-nav ul li.register a:hover{
-  text-decoration:none;
-}
-nav ul li.login:hover{
-  background: rgba(225, 237, 233, 0.15);
-}
-nav ul li.login a:hover{
-  text-decoration: none;
-  color: white;
-}
-nav ul li a{
-  color: white;
+a.navbar-brand{
   font-weight: bolder;
+  font-size: 30px;
+  color: white;
 }
-ul.user-reg-log{
+div.content{
+  padding-top: 50px;
+}
 
-  padding:none;
+span.button-icon{
+  background: rgb(25, 194, 32);
+
 }
-nav.nav{
-  padding: none;
+button.navbar-toggle{
+  background: rgba(21, 23, 22, 0.28);
+  box-shadow: inset 0px 0px 5px 0px black;
+  border: none;
 }
-li.picture{
+button.login{
+  background: rgba(6, 6, 6, 0.16);
+  color: white;
+  font-weight: bold;
+  box-shadow: inset 0px 0px 5px 0px black;
+  border: none;
+  padding: 15px;
+  width: 100%;
+}
+li.login a:hover{
+  background: rgba(242, 241, 231, 0.19);
+}
+li.register a{
   background: white;
-  border-radius: 25px;
-  margin-right: 5px;
-  color: rgb(25, 194, 32);
+  font-weight: bold;
 }
-
-hr{
-  border-color: white;
-  box-shadow: 0px 0px 1px 0px;
+form.login{
+  padding: 20px;
 }

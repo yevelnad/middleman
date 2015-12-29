@@ -1,10 +1,8 @@
 div.home-content{
   background-image:linear-gradient(rgb(25, 194, 32),rgb(35, 224, 25));
-  margin-top: 0px;
 }
 div.text-content{
   text-align: center;
-
 }
 div.text-content h1{
   margin-top: 40px;
@@ -39,5 +37,5 @@ button.mid{
   font-weight: bold;
   font-size: 20px;
   border: 2px solid white;
-  box-shadow: 0px 0px 5px 0px gray; 
+  box-shadow: 0px 0px 5px 0px gray;
 }

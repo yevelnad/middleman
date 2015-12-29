@@ -19,23 +19,69 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="col-sm-12">
-      <ul class="nav nav-pills">
-        <div class="col-sm-9">
-          <li role="presentation" class="middleman"><a href="/"><img src="{{asset('middleman.png')}}" class="middleman"/></a></li>
-        </div>
-        <div class="col-sm-3">
-          <ul class="user-reg-log col-sm-12">
-            <li class="col-sm-4"></li>
-            <li role="presentation" class="login col-sm-4"><span class="glyphicon glyphicon-user"></span><a href="/user/login"> Login</a></li>
-            <li role="presentation" class="register col-sm-4"><a href="/user/register">Register</a></li>
-          </ul>
-        </div>
-      </ul>
-    </nav>
 
-    @yield('content')
+    <!-- Static navbar -->
+    <div class="top">
+      <!-- Navigation -->
+  <nav class="navbar  navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar button-icon"></span>
+                  <span class="icon-bar button-icon"></span>
+                  <span class="icon-bar button-icon"></span>
+              </button>
+              <a class="navbar-brand" href="/"><img src="{{asset('middleman.png')}}" alt="" class="logo" /></a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="login">
+                      <button type="button" class="login" name="button" data-toggle="modal" data-target=".bs-example-modal-sm">Sign In</button>
+                  </li>
+                  <li class="register">
+                      <a href="/user/register">Sign Up</a>
+                  </li>
 
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
+
+<!---login modal-->
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <form class="login" action="/user/login" method="post">
+
+        <div class="form-group">
+          <label for="name">Username:</label>
+          <input type="text" name="name" value="" class="form-control">
+        </div>
+
+        <div class="fomr-group">
+          <label for="password">Password:</label>
+          <input type="password" name="name" value="" class="form-control">
+        </div>
+          <input type="hidden" name="_token" value="{{csrf_token()}}">
+          <br />
+          <input type="submit" name="login" value="sign in" class="btn btn-primary">
+
+      </form>
+    </div>
+  </div>
+</div>
+<!--end login modal -->
+
+      </div>
+    <div class="content">
+      @yield('content')
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{{asset('js/jquery-1.11.3.min.js')}}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
