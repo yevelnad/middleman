@@ -4,7 +4,7 @@
 Regiter here!
 @endsection
 @section('css')
-<link rel="stylesheet" href="{{asset('css/register.css')}}" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="{{asset('css/register.css', true)}}" media="screen" title="no title" charset="utf-8">
 @endsection
 @section('content')
   <div class="col-sm-12 register">

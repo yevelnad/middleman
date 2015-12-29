@@ -8,8 +8,8 @@
     <title>@yield('title')</title>
 
     <!-- Bootstrap -->
-    <link href="{{asset('bootstrap-3.3.6/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="/css/master.css" media="screen" title="no title" charset="utf-8">
+    <link href="{{asset('bootstrap-3.3.6/css/bootstrap.min.css', true)}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('/css/master.css', true)}}" media="screen" title="no title" charset="utf-8">
     @yield('css')
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -83,8 +83,8 @@
       @yield('content')
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{{asset('js/jquery-1.11.3.min.js')}}"></script>
+    <script src="{{asset('js/jquery-1.11.3.min.js', true)}}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{{asset('bootstrap-3.3.6/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('bootstrap-3.3.6/js/bootstrap.min.js', true)}}"></script>
   </body>
 </html>
