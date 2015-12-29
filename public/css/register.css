@@ -48,7 +48,7 @@ p.register-content{
   color:yellow;
   font-weight: ;
   font-family: fantasy;
-  font-size: 70px;
+
   text-shadow: 0px 0px 5px red;
   text-align:center;
 }
@@ -67,10 +67,13 @@ div.justify{
   padding: 5px;
   margin-top: 10px;
 }
-div.warning{
-  background: rgb(246, 15, 15);
+div.disclaimer{
+  background: rgb(122, 212, 241);
   margin-top: 20px;
+  font-size: 15px;
+  font-weight: bold;
   padding: 10px;
   text-align: center;
   color: white;
+  text-shadow: 0px 0px 1px black; 
 }

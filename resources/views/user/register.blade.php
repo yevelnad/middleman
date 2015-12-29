@@ -10,14 +10,14 @@ Regiter here!
   <div class="col-sm-12 register">
     <div class="col-sm-7 register-text">
       <div class="col-sm-12">
-        <div class="col-sm-6"><p class="register-content"><span class="glyphicon glyphicon-ok"> </span> Sign Up </p></div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-5"><p class="register-content"><span class="glyphicon glyphicon-ok"> </span> Trust </p></div>
+        <div class="col-sm-4"><h1><p class="register-content"><span class="glyphicon glyphicon-ok"> </span> SignUp </p></h1></div>
+        <div class="col-sm-4"><h1><p class="register-content"><span class="glyphicon glyphicon-ok"> </span> Search </p></h1></div>
+        <div class="col-sm-4"><h1><p class="register-content"><span class="glyphicon glyphicon-ok"> </span> Trust </p></h1></div>
         <div class="col-sm-12">
-          <p class="register-content"><span class="glyphicon glyphicon-thumbs-up"> </span> Earn </p>
+          <h1><p class="register-content"><span class="glyphicon glyphicon-thumbs-up"> </span> Earn by becoming a middleman</p></h1>
         </div>
         <div class="col-sm-12">
-          <p class="white"> by becoming a middleman</p>
+          <p class="white">We don't recommend it for bigger transactions.</p>
         </div>
       </div>
 
@@ -33,8 +33,8 @@ Regiter here!
   </div>
 <div class="col-sm-12">
   <div class="col-sm-3"></div>
-  <div class="col-sm-6 warning">
-    Warning: This is not recommended for transactions above 1000.00 pesos. Feel free to do so if 1000.00 pesos is just a small amount for you.
+  <div class="col-sm-6 disclaimer">
+    Disclaimer: We dont held responsible for any loss. Be warry in doing transactions. This app is just a tracker of transactions using middleman.
   </div>
   <div class="col-sm-1"></div>
 
