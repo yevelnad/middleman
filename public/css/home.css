@@ -1,28 +1,43 @@
-div.become{
+div.home-content{
+  background-image:linear-gradient(rgb(25, 194, 32),rgb(35, 224, 25));
+  margin-top: 0px;
+}
+div.text-content{
   text-align: center;
 
-  padding-bottom: 20px;
 }
-
-div.become h1{
-  font-family: monospace;
+div.text-content h1{
+  margin-top: 40px;
+  color: white;
+  font-family: fantasy;
+  font-size: 70px;
+}
+font.indent{
+  color: rgb(230, 247, 32);
+  text-shadow: 0px 0px 5px #FF0000;
+}
+div.questionmark{
+  font-size: 150px;
+  font-family: Times new Roman;
+}
+div.find{
+  background: none;
+  text-align: center;
+}
+div.find h1{
+  color: blue;
+  font-family: fantasy;
   font-weight: bolder;
-  text-transform: capitalize;
-  color: rgb(10, 168, 54);
+
 }
-div.become h4{
-  color: rgb(68, 149, 232);
-}
-p.indent{
-  background: white;
+button.mid{
+  margin-top: 20px;
   padding: 20px;
-}
-hr{
-  size: 3px;
-}
-button.bepartofus{
-  background: rgb(37, 184, 82);
+  background: rgb(25, 194, 32);
   color: white;
   border: none;
-  padding: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid white;
+  box-shadow: 0px 0px 5px 0px gray; 
 }

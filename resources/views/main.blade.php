@@ -22,7 +22,7 @@
     <nav class="col-sm-12">
       <ul class="nav nav-pills">
         <div class="col-sm-9">
-          <li role="presentation"><a href="/">Home</a></li>
+          <li role="presentation" class="middleman"><a href="/"><img src="{{asset('middleman.png')}}" class="middleman"/></a></li>
         </div>
         <div class="col-sm-3">
           <ul class="user-reg-log col-sm-12">
@@ -33,9 +33,9 @@
         </div>
       </ul>
     </nav>
-    <div class="col-sm-12 content">
+
     @yield('content')
-    </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{{asset('js/jquery-1.11.3.min.js')}}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
