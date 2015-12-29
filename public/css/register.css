@@ -1,0 +1,62 @@
+div.register{
+  background-image:linear-gradient(rgb(25, 194, 32),rgb(35, 224, 25));
+  margin-top: 0px;
+}
+div.register-form{
+  margin-top: 0px;
+}
+div.register-form form{
+  margin-top: 30px;
+  padding: 20px;
+  display: block;
+}
+div.register-form form input{
+  border: none;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 30px;
+  box-shadow: inset 0px 0px 5px 0px black;
+  margin-top: 20px;
+  display: block;
+  background: rgb(251, 251, 234);
+  color: rgb(35, 124, 25);
+  text-shadow: 0px 0px 1px gray;
+  border-radius: 10px;
+}
+div.register-form form input.button{
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(158, 251, 159);
+  font-family:monospace;
+  text-shadow: 0px 0px 5px black;
+  background: rgba(239, 246, 240, 0.09);
+  box-shadow: 0px 0px 5px 0px black;
+}
+div.register-form form input.button:hover{
+  background: rgba(13, 12, 12, 0.06);
+  box-shadow: inset 0px 0px 5px 0px black;
+  color: rgb(35, 224, 25);
+}
+div.register-text{
+  padding-top: 40px;
+}
+p{
+  display: inline-table;
+
+}
+p.register-content{
+  color:yellow;
+  font-weight: ;
+  font-family: fantasy;
+  font-size: 70px;
+  text-shadow: 0px 0px 5px red;
+  text-align:center;
+}
+p.white{
+  color: white;
+  font-weight: ;
+  font-family: fantasy;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
