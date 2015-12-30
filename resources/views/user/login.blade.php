@@ -3,37 +3,24 @@
 @section('title')
 login
 @endsection
+@section('active-login')active @endsection
 @section('css')
-<link rel="stylesheet" href="{{asset('css/form.css', false)}}" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="/css/login.css" media="screen" title="no title" charset="utf-8">
 @endsection
 @section('content')
-<div class="col-sm-4">
-
-</div>
-<div class="col-sm-4">
-  <div class="title">
-    <span class="glyphicon glyphicon-user"></span>   User Login
+<div class="col-sm-12 login">
+  <div class="col-sm-2 login-content">
   </div>
-  <div class="form-content">
+  <div class="col-sm-4 login-form">
+    <div class="title">Sign In:</div>
     <form class="" action="/user/login" method="post">
 
-      <div class="form-group">
-        <label for="name">Username:</label>
-        <input type="text" name="name" value="" class="form-control">
-      </div>
+      <input type="text" name="name" value="" placeholder="username: {{$errors->first('name')}}">
 
-      <div class="fomr-group">
-        <label for="password">Password:</label>
-        <input type="password" name="name" value="" class="form-control">
-      </div>
-        <input type="hidden" name="_token" value="{{csrf_token()}}">
-        <br />
-        <input type="submit" name="login" value="login" class="btn btn-primary">
-
+      <input type="password" name="name" value="" placeholder="password: {{$errors->first('password')}}">
+      <input type="hidden" name="_token" value="{{csrf_token()}}">
+      <input type="submit" name="signin" value="SignIn" class="button">
     </form>
   </div>
-</div>
-<div class="col-sm-4">
-
 </div>
 @endsection

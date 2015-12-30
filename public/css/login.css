@@ -1,0 +1,49 @@
+div.login{
+  background-image:linear-gradient(rgb(25, 194, 32),rgb(35, 224, 25));
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+div.login-content{
+
+}
+div.login-form div.title{
+  font-size: 20px;
+  font-weight:;
+  font-family: fantasy;
+  color: rgba(26, 22, 23, 0.5);
+}
+div.login form{
+  padding-top: 10px;
+}
+
+
+div.login form input{
+  border: none;
+  width: 100%;
+  padding: 18px;
+  font-size: 14px;
+  box-shadow: inset 0px 0px 5px 0px black;
+  margin-top: 20px;
+  display: block;
+  background: rgb(251, 251, 234);
+  color: rgb(35, 124, 25);
+  text-shadow: 0px 0px 1px gray;
+  border-radius: 10px;
+
+}
+div.login form input.button{
+  font-size: 15px;
+  font-weight: bold;
+  width: auto;
+  padding: 10px;
+  color: rgb(158, 251, 159);
+  font-family:monospace;
+  text-shadow: 0px 0px 5px black;
+  background: rgba(239, 246, 240, 0.09);
+  box-shadow: 0px 0px 5px 0px black;
+}
+div.login form input.button:hover{
+  background: rgba(13, 12, 12, 0.06);
+  box-shadow: inset 0px 0px 5px 0px black;
+  color: rgb(35, 224, 25);
+}

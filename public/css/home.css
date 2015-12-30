@@ -11,6 +11,7 @@ div.text-content h1{
   margin-top: 0px;
   color: white;
   font-family: fantasy;
+  text-shadow: 0px 0px 5px black;
   }
 font.indent{
   color: yellow;
@@ -57,6 +58,7 @@ button.arrow{
   background: none ;
   color: rgb(25, 194, 32);
   border: none;
+  text-shadow: 0px 0px 5px black;
   font-weight: bold;
   font-size: 60px;
   width: 100%;

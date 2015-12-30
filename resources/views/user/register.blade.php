@@ -1,8 +1,8 @@
 @extends('main')
-
 @section('title')
 Regiter here!
 @endsection
+@section('active-register')active @endsection
 @section('css')
 <link rel="stylesheet" href="/css/register.css" media="screen" title="no title" charset="utf-8">
 @endsection
@@ -22,11 +22,13 @@ Regiter here!
       </div>
 
     </div>
-    <div class="col-sm-5 register-form">
-      <form class="" action="index.html" method="post">
-        <input type="text" name="name" value="" placeholder="username" ng-model="Username">
-        <input type="email" name="email" value="" placeholder="email">
-        <input type="password" name="password" value="" placeholder="password">
+    <div class="col-sm-4 register-form">
+      <div class="title">Sign Up:</div>
+      <form class="" action="/user/register" method="post">
+        <input type="text" name="name" value="" placeholder="username: {{$errors->first('name')}}" ng-model="Username">
+        <input type="email" name="email" value="" placeholder="email: {{$errors->first('email')}}">
+        <input type="password" name="password" value="" placeholder="password: {{$errors->first('password')}}">
+        <input type="hidden" name="_token" value="{{csrf_token()}}">
         <input type="submit" name="register" value="SignUp" class="button">
       </form>
     </div>

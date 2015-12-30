@@ -10,9 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::get('/', function () {
-  return view('page.home');
-});
+Route::get('/', 'PagesController@home');
 /*
 /--------------------------------------------------------------------------
 / url = /user; /user/login
@@ -20,7 +18,10 @@ Route::get('/', function () {
 */
 Route::group(['prefix' => 'user', 'middleware' => ['web']], function() {
   Route::get('/login', 'LoginController@form');
+  Route::post('/login', 'LoginController@makeSingup');
+  Route::post('/modal-login', 'LoginController@modalLogin');
   Route::get('/register', 'RegisterController@form');
+  Route::post('/register', 'RegisterController@makeRegister');
 } );
 
 

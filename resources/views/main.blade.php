@@ -35,15 +35,19 @@
                   <span class="icon-bar button-icon"></span>
                   <span class="icon-bar button-icon"></span>
               </button>
-              <a class="navbar-brand" href="/"><img src="/middleman.png" alt="" class="logo" /></a>
+              <a class="navbar-brand @yield('home-active')" href="/"><img src="/middleman.png" alt="" class="logo" /></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                  @yield('scrollspy')
+              </ul>
               <ul class="nav navbar-nav navbar-right">
-                  <li class="login">
-                      <button type="button" class="login" name="button" data-toggle="modal" data-target=".bs-example-modal-sm">Sign In</button>
+
+                  <li class="modal-login @yield('active-login')" data-toggle="modal" data-target=".bs-example-modal-sm">
+                      Sign In
                   </li>
-                  <li class="register">
+                  <li class="@yield('active-register')" id="">
                       <a href="/user/register">Sign Up</a>
                   </li>
 
@@ -59,7 +63,7 @@
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
-      <form class="login" action="/user/login" method="post">
+      <form class="login" action="/user/modal-login" method="post">
 
         <div class="form-group">
           <label for="name">Username:</label>
@@ -81,7 +85,7 @@
 <!--end login modal -->
 
       </div>
-    <div class="content">
+    <div class="content" id="home">
       @yield('content')
     </div>
 

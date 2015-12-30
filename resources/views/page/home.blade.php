@@ -1,6 +1,12 @@
 @extends('main')
 @section('title')
-Home
+MiddleMan Home
+@endsection
+@section('home-active')active
+@endsection
+@section('scrollspy')
+  <li><a href="#home">Home</a></li>
+  <li><a href="#earn">Earn</a></li>
 @endsection
 @section('css')
 <link rel="stylesheet" href="/css/home.css" media="screen" title="no title" charset="utf-8">
@@ -47,7 +53,7 @@ Home
 </div>
 </div>
 <hr />
-<div class="home-earn col-sm-12">
+<div class="home-earn col-sm-12" id="earn">
   <div class="title col-sm-12"><h1> Want to earn? Why not become a middleman.</h1></div>
   <div class="col-sm-12 become-content">
     <section class="col-sm-4">
@@ -65,6 +71,7 @@ Home
 
   </div>
 </div>
-
-<hr />
+<div class="col-sm-12">
+  <div class="title col-sm-12"><h1>Search Middleman</h2></div>
+</div>
 @endsection

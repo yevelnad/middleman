@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
+use App\Http\Requests\RegisterRequest;
 use App\Http\Controllers\Controller;
 
 class RegisterController extends Controller
@@ -12,5 +12,9 @@ class RegisterController extends Controller
     public function form()
     {
       return view('user.register');
+    }
+    public function makeRegister(RegisterRequest $request)
+    {
+      return redirect('/user/register');
     }
 }
