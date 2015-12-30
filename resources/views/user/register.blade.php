@@ -4,7 +4,7 @@
 Regiter here!
 @endsection
 @section('css')
-<link rel="stylesheet" href="css/register.css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="{{asset('css/register.css', false)}}" media="screen" title="no title" charset="utf-8">
 @endsection
 @section('content')
   <div class="col-sm-12 register">
@@ -33,7 +33,6 @@ Regiter here!
   </div>
 
 <div class="col-sm-12">
-
   <div class="col-sm-3"></div>
   <div class="col-sm-6 disclaimer">
     Disclaimer: We dont held responsible for any loss. Be warry in doing transactions. This app is just a tracker of transactions using middleman.

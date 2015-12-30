@@ -47,3 +47,16 @@ li.register a{
 form.login{
   padding: 20px;
 }
+div.footer{
+  background-image:linear-gradient(rgba(76, 240, 97, 0.10), rgba(76, 240, 97, 0.01));
+  padding: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+div.footer div{
+  padding: 5px;
+}
+footer img{
+  background: white;
+  height: 40px;
+}

@@ -65,4 +65,6 @@ Home
 
   </div>
 </div>
+
+<hr />
 @endsection

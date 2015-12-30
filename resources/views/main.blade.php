@@ -8,7 +8,7 @@
     <title>@yield('title')</title>
 
     <!-- Bootstrap -->
-    <link href="bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/master.css" media="screen" title="no title" charset="utf-8">
     @yield('css')
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -35,7 +35,7 @@
                   <span class="icon-bar button-icon"></span>
                   <span class="icon-bar button-icon"></span>
               </button>
-              <a class="navbar-brand" href="/"><img src="middleman.png" alt="" class="logo" /></a>
+              <a class="navbar-brand" href="/"><img src="/middleman.png" alt="" class="logo" /></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -84,10 +84,21 @@
     <div class="content">
       @yield('content')
     </div>
+
+    <footer class="footer">
+      <div class="col-sm-12 footer">
+        <div class="col-sm-12">powered by:</div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <img src="/image/laravel.png" alt="" /> <img src="/image/bootstrap.png" alt="" /> <img src="/image/heroku.png" alt="" />
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="/js/jquery-1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script src="/bootstrap-3.3.6/js/bootstrap.min.js"></script>
 
     <!--change angular curly brackets-->
 
