@@ -1,18 +1,27 @@
+
 div.home-content{
   background-image:linear-gradient(rgb(25, 194, 32),rgb(35, 224, 25));
+  box-shadow: 0px 0px 5px 0px;
 }
 div.text-content{
   text-align: center;
+  padding-top: 50px;
 }
 div.text-content h1{
-  margin-top: 40px;
+  margin-top: 0px;
   color: white;
   font-family: fantasy;
-  font-size: 70px;
-}
+  }
 font.indent{
   color: yellow;
   text-shadow: 0px 0px 5px #FF0000;
+  font-size: 45px;
+
+}
+font.middleman{
+  color: rgb(42, 105, 233);
+  text-shadow: 0px 0px 5px black;
+  font-size: 90px;
 }
 div.questionmark{
   font-size: 150px;
@@ -28,14 +37,56 @@ div.find h1{
   font-weight: bolder;
 
 }
+div.steps{
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+}
 button.mid{
-  margin-top: 20px;
   padding: 20px;
   background: rgb(25, 194, 32);
   color: white;
   border: none;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 20px;
-  border: 2px solid white;
-  box-shadow: 0px 0px 5px 0px gray;
+  width: 100%;
+  box-shadow:inset 0px 0px 5px 0px black;
+  text-shadow: 0px 0px 5px black;
+}
+button.arrow{
+  background: none ;
+  color: rgb(25, 194, 32);
+  border: none;
+  font-weight: bold;
+  font-size: 60px;
+  width: 100%;
+}
+
+hr{
+
+  border: 1px solid white;
+}
+div.home-earn{
+  margin-top: 0px;
+  text-align: center;
+
+}
+div.title{
+  color: rgb(32, 144, 26);
+  font-family: fantasy;
+  text-shadow: 0px 0px 1px black;
+}
+div.become-content{
+  background: white;
+  text-align: center;
+  height: 200px;
+}
+
+div.become-content section h3 {
+  background-image: linear-gradient(rgb(25, 180, 230), rgb(25, 190, 230),rgb(25, 180, 230));
+  padding: 20px;
+  box-shadow: inset 0px 0px 5px 0px black;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px black;
 }

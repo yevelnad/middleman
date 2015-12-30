@@ -4,7 +4,7 @@
 login
 @endsection
 @section('css')
-<link rel="stylesheet" href="{{asset('css/form.css', true)}}" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="{{asset('css/form.css', false)}}" media="screen" title="no title" charset="utf-8">
 @endsection
 @section('content')
 <div class="col-sm-4">

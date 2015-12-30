@@ -4,7 +4,7 @@
 Regiter here!
 @endsection
 @section('css')
-<link rel="stylesheet" href="{{asset('css/register.css', true)}}" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="{{asset('css/register.css', false)}}" media="screen" title="no title" charset="utf-8">
 @endsection
 @section('content')
   <div class="col-sm-12 register">
@@ -24,14 +24,16 @@ Regiter here!
     </div>
     <div class="col-sm-5 register-form">
       <form class="" action="index.html" method="post">
-        <input type="text" name="name" value="" placeholder="username">
+        <input type="text" name="name" value="" placeholder="username" ng-model="Username">
         <input type="email" name="email" value="" placeholder="email">
         <input type="password" name="password" value="" placeholder="password">
-        <input type="submit" name="register" value="register" class="button">
+        <input type="submit" name="register" value="SignUp" class="button">
       </form>
     </div>
   </div>
+
 <div class="col-sm-12">
+
   <div class="col-sm-3"></div>
   <div class="col-sm-6 disclaimer">
     Disclaimer: We dont held responsible for any loss. Be warry in doing transactions. This app is just a tracker of transactions using middleman.
