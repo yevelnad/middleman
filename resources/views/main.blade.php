@@ -8,8 +8,8 @@
     <title>@yield('title')</title>
 
     <!-- Bootstrap -->
-    <link href="{{asset('bootstrap-3.3.6/css/bootstrap.min.css', false)}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('/css/master.css', false)}}" media="screen" title="no title" charset="utf-8">
+    <link href="bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/master.css" media="screen" title="no title" charset="utf-8">
     @yield('css')
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,7 +35,7 @@
                   <span class="icon-bar button-icon"></span>
                   <span class="icon-bar button-icon"></span>
               </button>
-              <a class="navbar-brand" href="/"><img src="{{asset('middleman.png')}}" alt="" class="logo" /></a>
+              <a class="navbar-brand" href="/"><img src="middleman.png" alt="" class="logo" /></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -85,9 +85,9 @@
       @yield('content')
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{{asset('js/jquery-1.11.3.min.js', false)}}"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{{asset('bootstrap-3.3.6/js/bootstrap.min.js', false)}}"></script>
+    <script src="bootstrap-3.3.6/js/bootstrap.min.js"></script>
 
     <!--change angular curly brackets-->
 
