@@ -18,11 +18,17 @@ Route::get('/', 'PagesController@home');
 */
 Route::group(['prefix' => 'user', 'middleware' => ['web']], function() {
   Route::get('/login', 'LoginController@form');
-  Route::post('/login', 'LoginController@makeSingup');
+  Route::post('/login', 'LoginController@makeLogin');
   Route::post('/modal-login', 'LoginController@modalLogin');
   Route::get('/register', 'RegisterController@form');
   Route::post('/register', 'RegisterController@makeRegister');
+  Route::get('/logout', 'LoginController@logout');
 } );
+Route::group(['prefix' => 'transaction', 'middleware' => ['web','auth']], function(){
+  Route::get('/', 'TransactionController@index');
+  Route::get('/create', 'TransactionController@create');
+  Route::post('/create', 'TransactionController@save');
+});
 
 
 /*

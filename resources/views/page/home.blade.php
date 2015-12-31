@@ -5,7 +5,7 @@ MiddleMan Home
 @section('home-active')active
 @endsection
 @section('scrollspy')
-  <li><a href="#home">Home</a></li>
+  <li class="active"><a href="#home">Home</a></li>
   <li><a href="#earn">Earn</a></li>
 @endsection
 @section('css')

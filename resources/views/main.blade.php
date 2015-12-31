@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>@yield('title')</title>
-
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bevan" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Hammersmith+One" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Andada" />
     <!-- Bootstrap -->
     <link href="/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/master.css" media="screen" title="no title" charset="utf-8">
@@ -35,7 +37,7 @@
                   <span class="icon-bar button-icon"></span>
                   <span class="icon-bar button-icon"></span>
               </button>
-              <a class="navbar-brand @yield('home-active')" href="/"><img src="/middleman.png" alt="" class="logo" /></a>
+              <a class="navbar-brand" href="/"><img src="/middleman.png" alt="" class="logo" /></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -43,14 +45,19 @@
                   @yield('scrollspy')
               </ul>
               <ul class="nav navbar-nav navbar-right">
-
-                  <li class="modal-login @yield('active-login')" data-toggle="modal" data-target=".bs-example-modal-sm">
-                      Sign In
+@if(!Auth::check())
+                  <li class="@yield('active-login')" id="">
+                      <a href="/user/login">Sign In</a>
                   </li>
                   <li class="@yield('active-register')" id="">
                       <a href="/user/register">Sign Up</a>
                   </li>
-
+@else
+                  <li>
+                      <a href="">{{Auth::user()->name}}</a>
+                  </li>
+                  <li><a href="/user/logout">Logout</a></li>
+@endif
               </ul>
           </div>
           <!-- /.navbar-collapse -->
@@ -60,28 +67,6 @@
 
 <!---login modal-->
 
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <form class="login" action="/user/modal-login" method="post">
-
-        <div class="form-group">
-          <label for="name">Username:</label>
-          <input type="text" name="name" value="" class="form-control">
-        </div>
-
-        <div class="fomr-group">
-          <label for="password">Password:</label>
-          <input type="password" name="name" value="" class="form-control">
-        </div>
-          <input type="hidden" name="_token" value="{{csrf_token()}}">
-          <br />
-          <input type="submit" name="login" value="sign in" class="btn btn-primary">
-
-      </form>
-    </div>
-  </div>
-</div>
 <!--end login modal -->
 
       </div>

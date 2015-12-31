@@ -15,11 +15,11 @@ login
     <div class="title">Sign In:</div>
     <form class="" action="/user/login" method="post">
 
-      <input type="text" name="name" value="" placeholder="username: {{$errors->first('name')}}">
+      <input type="text" name="name" placeholder="username: {{$errors->first('name')}}">
 
-      <input type="password" name="name" value="" placeholder="password: {{$errors->first('password')}}">
+      <input type="password" name="password" placeholder="password: {{$errors->first('password')}}">
       <input type="hidden" name="_token" value="{{csrf_token()}}">
-      <input type="submit" name="signin" value="SignIn" class="button">
+      <input type="submit" name="login" value="login" class="button">
     </form>
   </div>
 </div>

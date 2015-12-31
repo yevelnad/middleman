@@ -44,6 +44,9 @@
         ],
         "post-update-cmd": [
             "php artisan optimize"
+        ],
+        "post-update-cmd":[
+            "php artisan route:cache"
         ]
     },
     "config": {

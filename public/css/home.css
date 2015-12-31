@@ -10,7 +10,7 @@ div.text-content{
 div.text-content h1{
   margin-top: 0px;
   color: white;
-  font-family: fantasy;
+  font-family: Bevan;
   text-shadow: 0px 0px 5px black;
   }
 font.indent{
@@ -22,11 +22,11 @@ font.indent{
 font.middleman{
   color: rgb(42, 105, 233);
   text-shadow: 0px 0px 5px black;
-  font-size: 90px;
+  font-size: 65px;
 }
 div.questionmark{
   font-size: 150px;
-  font-family: Times new Roman;
+  font-family: Hammersmith One;
 }
 div.find{
   background: none;
@@ -34,7 +34,7 @@ div.find{
 }
 div.find h1{
   color: blue;
-  font-family: fantasy;
+  font-family: Hammersmith One;
   font-weight: bolder;
 
 }
@@ -75,7 +75,8 @@ div.home-earn{
 }
 div.title{
   color: rgb(32, 144, 26);
-  font-family: fantasy;
+  font-family: Andada;
+  font-weight: bold;
   text-shadow: 0px 0px 1px black;
 }
 div.become-content{
