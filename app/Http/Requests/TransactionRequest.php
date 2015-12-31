@@ -26,7 +26,7 @@ class TransactionRequest extends Request
     {
         return [
             'recipient' => 'required|alphanum|exists:users,name',
-            'name' => 'required|alphanum',
+            'name' => 'required|min:5',
             'description' => 'required|max:500',
             'reward' => 'required|integer',
         ];
