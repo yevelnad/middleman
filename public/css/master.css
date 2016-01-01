@@ -6,10 +6,10 @@ img.logo{
   height: 20px;
 }
 a.active{
-  background: rgba(8, 7, 8, 0.19);
+  background: rgba(8, 7, 8, 0.05);
   text-shadow: 0px 0px 5px black;
 
-  box-shadow: inset 0px 0px 5px 0px black;
+  box-shadow: inset 0px 0px 1px 0px black;
   padding-top: 15px;
 }
 nav.navbar {
@@ -37,10 +37,10 @@ button.navbar-toggle{
   border: none;
 }
 ul.nav li.active{
-  background: rgba(8, 7, 8, 0.19);
+  background: rgba(8, 7, 8, 0.10);
   font-weight: bolder;
   color: white;
-  box-shadow: inset 0px 0px 5px 0px black;
+  box-shadow: inset 0px 0px 1px 0px black;
 }
 ul.nav li.active a{
   color: white;
@@ -52,19 +52,8 @@ ul.nav li a{
 ul.nav li a:hover{
   background: rgba(15, 16, 17, 0.26);
 }
-li.modal-login{
-  padding: 15px;
-}
-li.modal-login:hover{
-  padding: 15px;
-  background: rgba(15, 16, 17, 0.26);
-}
-
-form.login{
-  padding: 20px;
-}
 div.footer{
-
+  box-shadow: inset 0px 0px 5px 0px white;
   padding: 20px;
   text-align: center;
 }

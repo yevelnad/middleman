@@ -20,7 +20,7 @@ div.register-form form input{
   width: 100%;
   padding: 18px;
   font-size: 14px;
-  box-shadow: inset 0px 0px 5px 0px black;
+  box-shadow: inset 0px 0px 1px 0px black;
   margin-top: 20px;
   display: block;
   background: rgb(251, 251, 234);
@@ -35,13 +35,13 @@ div.register-form form input.button{
   color: rgb(158, 251, 159);
   font-family:monospace;
   width: auto;
-  text-shadow: 0px 0px 5px black;
+  text-shadow: 0px 0px 1px black;
   background: rgba(239, 246, 240, 0.09);
-  box-shadow: 0px 0px 5px 0px black;
+  box-shadow: 0px 0px 1px 0px black;
 }
 div.register-form form input.button:hover{
   background: rgba(13, 12, 12, 0.06);
-  box-shadow: inset 0px 0px 5px 0px black;
+  box-shadow: inset 0px 0px 1px 0px black;
   color: rgb(35, 224, 25);
 }
 div.register-text{
@@ -57,7 +57,7 @@ p.register-content{
   font-weight: ;
   font-family: Bevan;
 
-  text-shadow: 0px 0px 5px red;
+  text-shadow: 0px 0px 1px black;
   text-align:center;
 }
 p.white{
